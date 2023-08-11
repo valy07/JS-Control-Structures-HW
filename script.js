@@ -77,7 +77,7 @@ function countItem(arr, item) {
   let count = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == item) {
+    if (arr[i] === item) {
       count++;
     }
   }
@@ -150,9 +150,7 @@ function fizzBuzz(num) {
     } else {
       if (num % 4 === 0) {
         num = `buzz`;
-      } else {
-        num;
-      }
+      } 
     }
   }
 
@@ -170,7 +168,7 @@ if (castingNumber < 1) {
   for (let i = 1; i <= castingNumber; i++) {
     let j = fizzBuzz(i);
 
-    if (j == "fizz" || j == "buzz" || j == "fizzbuzz") {
+    if (j === "fizz" || j === "buzz" || j === "fizzbuzz") {
       output += j + "; ";
     } else {
       output += i + "; ";
